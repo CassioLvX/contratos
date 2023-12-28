@@ -4,20 +4,20 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDepartamentosTable extends Migration
+class CreateDepartmentTable extends Migration
 {
     public function up()
     {
-        Schema::create('departamentos', function (Blueprint $table) {
+        Schema::create('department', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
-            $table->text('descricao');
+            $table->string('name');
+            $table->text('description');
             $table->timestamps();
         });
     }
 
     public function down()
     {
-        Schema::dropIfExists('departamentos');
+        Schema::dropIfExists('department');
     }
 }

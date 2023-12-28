@@ -2,16 +2,16 @@
 
 namespace Database\Seeders;
 
-use App\Models\Fornecedor;
+use App\Models\Supplier;
 use Illuminate\Database\Seeder;
 
-class FornecedorSeeder extends Seeder
+class SupplierSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run()
     {
-        Fornecedor::factory(10)->create();
+        Supplier::factory(10)->create();
     }
 }

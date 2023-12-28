@@ -2,16 +2,16 @@
 
 namespace Database\Seeders;
 
-use App\Models\Contrato;
+use App\Models\ContractDepartment;
 use Illuminate\Database\Seeder;
 
-class ContratoSeeder extends Seeder
+class ContractDepartmentSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Contrato::factory(10)->create();
+        ContractDepartment::factory(10)->create();
     }
 }
