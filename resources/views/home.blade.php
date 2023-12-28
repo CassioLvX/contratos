@@ -94,7 +94,6 @@
     </div>
 <hr>
 
-<div id="mensagem-filter-error"></div>
 <h2>Grade de Contratos</h2>
 <form id="filterForm">
    <div>
