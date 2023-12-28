@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\CadastroContratoController;
+use App\Http\Controllers\DepartamentosController;
+use App\Http\Controllers\FornecedoresController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +17,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('/contracts', [CadastroContratoController::class, 'getAll']);
+Route::put('/contracts', [CadastroContratoController::class, 'filter']);
+Route::post('/contracts', [CadastroContratoController::class, 'store']);
+
+Route::get('/departments', [DepartamentosController::class, 'getAll']);
+Route::post('/departments', [DepartamentosController::class, 'store']);
+
+Route::get('/suppliers', [FornecedoresController::class, 'getAll']);
+Route::post('/suppliers', [FornecedoresController::class, 'store']);
